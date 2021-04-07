@@ -7,6 +7,7 @@
     <li>React</li>
     <li>CRA</li>
     <li>AntDesign</li>
+    <li>TypeScript</li>
     <li>GraphQl API</li>
 </ul>
 
