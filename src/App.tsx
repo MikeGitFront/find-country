@@ -50,6 +50,9 @@ const App: React.FC = () => {
 
 
   const onSearch = (value: string) => {
+    if (value.trim() === '') {
+      return false
+    }
     if ((value.trim() !== '' && selectedValue === '') || (value.trim() !== '' && selectedValue === 'All')) {
       const filteredValues = standartValues.filter(item => {
         return item.name.toLowerCase() === value.toLowerCase() || item.code.toLowerCase() === value.toLowerCase()
